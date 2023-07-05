@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="530.53435114503816" y="-41.549295774647888"/>
         </scene>
-        <!--Explore-->
+        <!--  Explore-->
         <scene sceneID="u5S-Aq-5DH">
             <objects>
-                <viewController id="Zsl-DM-Xco" sceneMemberID="viewController">
+                <viewController id="Zsl-DM-Xco" customClass="ViewController" customModule="SolarSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g5g-Im-YjH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
                         <viewLayoutGuide key="safeArea" id="s3k-as-4AQ"/>
                         <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Explore" id="1gn-44-DFR"/>
+                    <navigationItem key="navigationItem" title="  Explore" id="1gn-44-DFR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GH9-TJ-CZ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
