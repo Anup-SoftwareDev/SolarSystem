@@ -46,15 +46,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Make the table view transparent
         tableView.backgroundColor = UIColor.clear
     
-//        super.viewDidLoad()
-//
-//
-//        view.addSubview(tableView)
-//        tableView.frame = view.bounds
-//        tableView.dataSource = self
-//        tableView.delegate =  self
-//        tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
-//        tableView.rowHeight = 120
+
     }
     
 // Delegate method to set cell background color to clear
@@ -129,8 +121,6 @@ class CustomCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-    
 }
 
 
