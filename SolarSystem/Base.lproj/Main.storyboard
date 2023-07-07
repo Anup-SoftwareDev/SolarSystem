@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SMF-ZL-KaN">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,14 +14,14 @@
             <objects>
                 <viewController id="c7h-kw-fDQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YUb-WL-ghQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="solarsystem" translatesAutoresizingMaskIntoConstraints="NO" id="qNj-Iw-gh4">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOY-X5-5k3">
-                                <rect key="frame" x="96.666666666666686" y="658" width="200" height="40"/>
+                                <rect key="frame" x="115" y="738" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="gZC-Bl-Ugw"/>
                                     <constraint firstAttribute="width" constant="200" id="qyg-dX-mFu"/>
@@ -56,27 +58,223 @@
             </objects>
             <point key="canvasLocation" x="530.53435114503816" y="-41.549295774647888"/>
         </scene>
-        <!--  Explore-->
+        <!--  Explore Planets-->
         <scene sceneID="u5S-Aq-5DH">
             <objects>
                 <viewController id="Zsl-DM-Xco" customClass="ViewController" customModule="SolarSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g5g-Im-YjH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-zP-Ihn">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-zP-Ihn">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s3k-as-4AQ"/>
                         <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MTH-zP-Ihn" secondAttribute="trailing" id="LhF-tR-Hl2"/>
+                            <constraint firstItem="MTH-zP-Ihn" firstAttribute="top" secondItem="g5g-Im-YjH" secondAttribute="top" id="M8Z-tb-Ft2"/>
+                            <constraint firstAttribute="bottom" secondItem="MTH-zP-Ihn" secondAttribute="bottom" id="Slb-ak-CgM"/>
+                            <constraint firstItem="MTH-zP-Ihn" firstAttribute="leading" secondItem="s3k-as-4AQ" secondAttribute="leading" id="fqE-rR-4n3"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="  Explore" id="1gn-44-DFR"/>
+                    <navigationItem key="navigationItem" title="  Explore Planets" id="1gn-44-DFR">
+                        <barButtonItem key="backBarButtonItem" title=" " id="OUB-LO-27T"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="SgP-Sr-mjg" kind="show" identifier="GoToPlanetDetail" id="71M-KW-CK7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GH9-TJ-CZ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1311" y="-42"/>
+        </scene>
+        <!--Planet Details-->
+        <scene sceneID="CfB-aV-Sdb">
+            <objects>
+                <viewController id="SgP-Sr-mjg" customClass="PlanetDetailViewController" customModule="SolarSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fh4-5S-0A6">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="CZH-qW-yrR">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gUk-L5-GaJ">
+                                <rect key="frame" x="50" y="188.66666666666663" width="330" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="TQU-XF-d0R"/>
+                                    <constraint firstAttribute="height" constant="250" id="dos-S9-Cij"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TQU-XF-d0R"/>
+                                        <exclude reference="dos-S9-Cij"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dos-S9-Cij"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="TQU-XF-d0R"/>
+                                        <exclude reference="dos-S9-Cij"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hdh-dz-FAc">
+                                <rect key="frame" x="10" y="473.66666666666674" width="410" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="tdm-3a-YEd"/>
+                                </constraints>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetDetailCell" id="g46-Dr-zbz">
+                                        <rect key="frame" x="0.0" y="50" width="410" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g46-Dr-zbz" id="mc4-jB-7vm">
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNQ-b1-N18">
+                                                    <rect key="frame" x="25" y="9.6666666666666661" width="170" height="24.666666666666671"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="DYq-qg-wWf"/>
+                                                        <constraint firstAttribute="width" constant="170" id="mvg-Xv-8Gq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="DYq-qg-wWf"/>
+                                                            <exclude reference="mvg-Xv-8Gq"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="mvg-Xv-8Gq"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <mask key="constraints">
+                                                            <include reference="DYq-qg-wWf"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO8-Mt-gIF">
+                                                    <rect key="frame" x="200" y="9.6666666666666661" width="70" height="24.666666666666671"/>
+                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="SrS-8o-sXi"/>
+                                                        <constraint firstAttribute="width" constant="250" id="sMx-qI-LEk"/>
+                                                        <constraint firstAttribute="width" constant="70" id="uVV-Mv-7Qz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="SrS-8o-sXi"/>
+                                                            <exclude reference="sMx-qI-LEk"/>
+                                                            <exclude reference="uVV-Mv-7Qz"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="uVV-Mv-7Qz"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <mask key="constraints">
+                                                            <include reference="SrS-8o-sXi"/>
+                                                            <include reference="sMx-qI-LEk"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L9-9G-LZG">
+                                                    <rect key="frame" x="275" y="11" width="110" height="22"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="fVF-w6-EV8"/>
+                                                        <constraint firstAttribute="height" constant="35" id="kMC-cA-Iyt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="fVF-w6-EV8"/>
+                                                            <exclude reference="kMC-cA-Iyt"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <mask key="constraints">
+                                                            <include reference="fVF-w6-EV8"/>
+                                                            <include reference="kMC-cA-Iyt"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wNQ-b1-N18" firstAttribute="leading" secondItem="mc4-jB-7vm" secondAttribute="leadingMargin" constant="5" id="15a-7U-OvL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1L9-9G-LZG" secondAttribute="trailing" constant="5" id="CsW-Sn-ANt"/>
+                                                <constraint firstItem="GO8-Mt-gIF" firstAttribute="centerY" secondItem="mc4-jB-7vm" secondAttribute="centerY" id="N7Z-1h-eZF"/>
+                                                <constraint firstItem="1L9-9G-LZG" firstAttribute="centerY" secondItem="mc4-jB-7vm" secondAttribute="centerY" id="NMt-C5-i5N"/>
+                                                <constraint firstItem="wNQ-b1-N18" firstAttribute="centerY" secondItem="mc4-jB-7vm" secondAttribute="centerY" id="NbT-Re-4qi"/>
+                                                <constraint firstItem="1L9-9G-LZG" firstAttribute="leading" secondItem="GO8-Mt-gIF" secondAttribute="trailing" constant="5" id="t9l-xB-vBX"/>
+                                                <constraint firstItem="GO8-Mt-gIF" firstAttribute="leading" secondItem="wNQ-b1-N18" secondAttribute="trailing" constant="5" id="vOf-Rh-Cfb"/>
+                                            </constraints>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="wNQ-b1-N18"/>
+                                                    <include reference="GO8-Mt-gIF"/>
+                                                    <include reference="1L9-9G-LZG"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bW6-OP-FIm"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Hdh-dz-FAc" firstAttribute="leading" secondItem="bW6-OP-FIm" secondAttribute="leading" constant="10" id="A4J-sP-1k9"/>
+                            <constraint firstItem="gUk-L5-GaJ" firstAttribute="leading" secondItem="Fh4-5S-0A6" secondAttribute="leading" constant="50" id="CfN-Lb-xNl"/>
+                            <constraint firstItem="CZH-qW-yrR" firstAttribute="top" secondItem="Fh4-5S-0A6" secondAttribute="top" id="Gpg-Tn-EoI"/>
+                            <constraint firstAttribute="bottom" secondItem="CZH-qW-yrR" secondAttribute="bottom" id="Hy3-FT-SbA"/>
+                            <constraint firstAttribute="trailing" secondItem="CZH-qW-yrR" secondAttribute="trailing" id="IcF-tN-4jg"/>
+                            <constraint firstItem="gUk-L5-GaJ" firstAttribute="centerX" secondItem="Fh4-5S-0A6" secondAttribute="centerX" id="KRR-hD-TrP"/>
+                            <constraint firstItem="Hdh-dz-FAc" firstAttribute="top" secondItem="gUk-L5-GaJ" secondAttribute="bottom" constant="35" id="RFZ-si-m7z"/>
+                            <constraint firstItem="gUk-L5-GaJ" firstAttribute="top" secondItem="bW6-OP-FIm" secondAttribute="top" constant="30" id="aIq-zJ-8Nf"/>
+                            <constraint firstItem="CZH-qW-yrR" firstAttribute="leading" secondItem="bW6-OP-FIm" secondAttribute="leading" id="cWA-zT-Jf7"/>
+                            <constraint firstItem="bW6-OP-FIm" firstAttribute="trailing" secondItem="Hdh-dz-FAc" secondAttribute="trailing" constant="10" id="dhe-cG-Jd5"/>
+                            <constraint firstAttribute="trailing" secondItem="gUk-L5-GaJ" secondAttribute="trailing" constant="50" id="g2O-6x-L1g"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Hdh-dz-FAc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Planet Details" id="LwI-94-mGI"/>
+                    <connections>
+                        <outlet property="planetPicture" destination="gUk-L5-GaJ" id="2Yd-XP-ISG"/>
+                        <outlet property="planetTable" destination="Hdh-dz-FAc" id="uyv-QL-NOw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWM-3o-7WL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052.5581395348836" y="-42.489270386266099"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1NJ-9v-IPP">
@@ -84,7 +282,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SMF-ZL-KaN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="hUU-Nr-bUg">
-                        <rect key="frame" x="0.0" y="59" width="393" height="99.666666666666657"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="99.666666666666657"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -108,5 +306,14 @@
     <resources>
         <image name="galaxy" width="640" height="960"/>
         <image name="solarsystem" width="640" height="425"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
