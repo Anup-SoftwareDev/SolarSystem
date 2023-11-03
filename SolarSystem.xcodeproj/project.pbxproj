@@ -136,12 +136,28 @@
 		CA2FCD3E2AF472DB00376494 /* SolarSystemTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA2FCD4D2AF48EE500376494 /* ViewModelTests */,
+				CA2FCD4C2AF48EC500376494 /* ModelTests */,
 				CA2FCD3F2AF472DB00376494 /* SolarSystemTests.swift */,
-				CA2FCD462AF4763200376494 /* PlanetViewModelTests.swift */,
-				CA2FCD482AF485D700376494 /* PlanetDetailViewModelTests.swift */,
-				CA2FCD4A2AF48C3500376494 /* PlanetDataTests.swift */,
 			);
 			path = SolarSystemTests;
+			sourceTree = "<group>";
+		};
+		CA2FCD4C2AF48EC500376494 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FCD4A2AF48C3500376494 /* PlanetDataTests.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		CA2FCD4D2AF48EE500376494 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FCD482AF485D700376494 /* PlanetDetailViewModelTests.swift */,
+				CA2FCD462AF4763200376494 /* PlanetViewModelTests.swift */,
+			);
+			path = ViewModelTests;
 			sourceTree = "<group>";
 		};
 		CA9FEC6A2A54E7AB00CA260D = {

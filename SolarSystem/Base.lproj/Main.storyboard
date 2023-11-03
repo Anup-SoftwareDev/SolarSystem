@@ -12,7 +12,7 @@
         <!--Solar System-->
         <scene sceneID="R0w-dx-I4j">
             <objects>
-                <viewController id="c7h-kw-fDQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="c7h-kw-fDQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YUb-WL-ghQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
