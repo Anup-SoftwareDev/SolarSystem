@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B68457DC633338614DAB5B0B /* Pods_SolarSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF80E027D30C1B1DCF1B4CD /* Pods_SolarSystem.framework */; };
+		CA2FCD1F2AF3128900376494 /* PlanetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD1E2AF3128900376494 /* PlanetData.swift */; };
+		CA2FCD212AF3151200376494 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD202AF3151100376494 /* CustomCell.swift */; };
+		CA2FCD272AF319CC00376494 /* PlanetDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD262AF319CC00376494 /* PlanetDataService.swift */; };
+		CA2FCD292AF31AAE00376494 /* PlanetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD282AF31AAE00376494 /* PlanetViewModel.swift */; };
+		CA2FCD2B2AF3261800376494 /* PlanetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD2A2AF3261800376494 /* PlanetDetailViewModel.swift */; };
+		CA2FCD402AF472DB00376494 /* SolarSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD3F2AF472DB00376494 /* SolarSystemTests.swift */; };
+		CA2FCD472AF4763200376494 /* PlanetViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD462AF4763200376494 /* PlanetViewModelTests.swift */; };
+		CA2FCD492AF485D700376494 /* PlanetDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD482AF485D700376494 /* PlanetDetailViewModelTests.swift */; };
 		CA9FEC772A54E7AB00CA260D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FEC762A54E7AB00CA260D /* AppDelegate.swift */; };
 		CA9FEC792A54E7AB00CA260D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FEC782A54E7AB00CA260D /* SceneDelegate.swift */; };
 		CA9FEC7B2A54E7AB00CA260D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FEC7A2A54E7AB00CA260D /* ViewController.swift */; };
@@ -14,9 +23,33 @@
 		CA9FEC802A54E7AD00CA260D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FEC7F2A54E7AD00CA260D /* Assets.xcassets */; };
 		CA9FEC832A54E7AD00CA260D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9FEC812A54E7AD00CA260D /* LaunchScreen.storyboard */; };
 		CA9FEC8B2A56211700CA260D /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FEC8A2A56211700CA260D /* PlanetDetailViewController.swift */; };
+		ECADC3E8D41DD7CC887D1410 /* Pods_SolarSystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A8381964322118C5005234 /* Pods_SolarSystemTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CA2FCD412AF472DB00376494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA9FEC6B2A54E7AB00CA260D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA9FEC722A54E7AB00CA260D;
+			remoteInfo = SolarSystem;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		47DE815638264239AF8471B1 /* Pods-SolarSystemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarSystemTests.debug.xcconfig"; path = "Target Support Files/Pods-SolarSystemTests/Pods-SolarSystemTests.debug.xcconfig"; sourceTree = "<group>"; };
+		661325C6764DA21D3E2F3DF5 /* Pods-SolarSystemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarSystemTests.release.xcconfig"; path = "Target Support Files/Pods-SolarSystemTests/Pods-SolarSystemTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA2FCD1E2AF3128900376494 /* PlanetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetData.swift; sourceTree = "<group>"; };
+		CA2FCD202AF3151100376494 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		CA2FCD262AF319CC00376494 /* PlanetDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDataService.swift; sourceTree = "<group>"; };
+		CA2FCD282AF31AAE00376494 /* PlanetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModel.swift; sourceTree = "<group>"; };
+		CA2FCD2A2AF3261800376494 /* PlanetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewModel.swift; sourceTree = "<group>"; };
+		CA2FCD2F2AF45DB900376494 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2FCD312AF45DC000376494 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2FCD3D2AF472DB00376494 /* SolarSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2FCD3F2AF472DB00376494 /* SolarSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTests.swift; sourceTree = "<group>"; };
+		CA2FCD462AF4763200376494 /* PlanetViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModelTests.swift; sourceTree = "<group>"; };
+		CA2FCD482AF485D700376494 /* PlanetDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewModelTests.swift; sourceTree = "<group>"; };
 		CA9FEC732A54E7AB00CA260D /* SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9FEC762A54E7AB00CA260D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA9FEC782A54E7AB00CA260D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,24 +59,96 @@
 		CA9FEC822A54E7AD00CA260D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA9FEC842A54E7AD00CA260D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9FEC8A2A56211700CA260D /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
+		D3A8381964322118C5005234 /* Pods_SolarSystemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolarSystemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F620E223708A4E7C6529D724 /* Pods-SolarSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarSystem.debug.xcconfig"; path = "Target Support Files/Pods-SolarSystem/Pods-SolarSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		FC92C63B26D5893F9188362D /* Pods-SolarSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarSystem.release.xcconfig"; path = "Target Support Files/Pods-SolarSystem/Pods-SolarSystem.release.xcconfig"; sourceTree = "<group>"; };
+		FCF80E027D30C1B1DCF1B4CD /* Pods_SolarSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolarSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA2FCD3A2AF472DB00376494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECADC3E8D41DD7CC887D1410 /* Pods_SolarSystemTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA9FEC702A54E7AB00CA260D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68457DC633338614DAB5B0B /* Pods_SolarSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2E9E423F598347E74F6BDA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FCD312AF45DC000376494 /* Quick.framework */,
+				CA2FCD2F2AF45DB900376494 /* Nimble.framework */,
+				FCF80E027D30C1B1DCF1B4CD /* Pods_SolarSystem.framework */,
+				D3A8381964322118C5005234 /* Pods_SolarSystemTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA2FCD222AF3188B00376494 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FCD1E2AF3128900376494 /* PlanetData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA2FCD232AF3189500376494 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FCD282AF31AAE00376494 /* PlanetViewModel.swift */,
+				CA2FCD2A2AF3261800376494 /* PlanetDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA2FCD242AF318A000376494 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA9FEC7A2A54E7AB00CA260D /* ViewController.swift */,
+				CA9FEC8A2A56211700CA260D /* PlanetDetailViewController.swift */,
+				CA2FCD202AF3151100376494 /* CustomCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA2FCD252AF3196300376494 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FCD262AF319CC00376494 /* PlanetDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CA2FCD3E2AF472DB00376494 /* SolarSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2FCD3F2AF472DB00376494 /* SolarSystemTests.swift */,
+				CA2FCD462AF4763200376494 /* PlanetViewModelTests.swift */,
+				CA2FCD482AF485D700376494 /* PlanetDetailViewModelTests.swift */,
+			);
+			path = SolarSystemTests;
+			sourceTree = "<group>";
+		};
 		CA9FEC6A2A54E7AB00CA260D = {
 			isa = PBXGroup;
 			children = (
 				CA9FEC752A54E7AB00CA260D /* SolarSystem */,
+				CA2FCD3E2AF472DB00376494 /* SolarSystemTests */,
 				CA9FEC742A54E7AB00CA260D /* Products */,
+				DCDED7062688E007961C09A9 /* Pods */,
+				C2E9E423F598347E74F6BDA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				CA9FEC732A54E7AB00CA260D /* SolarSystem.app */,
+				CA2FCD3D2AF472DB00376494 /* SolarSystemTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,10 +164,12 @@
 		CA9FEC752A54E7AB00CA260D /* SolarSystem */ = {
 			isa = PBXGroup;
 			children = (
+				CA2FCD252AF3196300376494 /* Service */,
+				CA2FCD242AF318A000376494 /* View */,
+				CA2FCD232AF3189500376494 /* ViewModel */,
+				CA2FCD222AF3188B00376494 /* Model */,
 				CA9FEC762A54E7AB00CA260D /* AppDelegate.swift */,
 				CA9FEC782A54E7AB00CA260D /* SceneDelegate.swift */,
-				CA9FEC7A2A54E7AB00CA260D /* ViewController.swift */,
-				CA9FEC8A2A56211700CA260D /* PlanetDetailViewController.swift */,
 				CA9FEC7C2A54E7AB00CA260D /* Main.storyboard */,
 				CA9FEC7F2A54E7AD00CA260D /* Assets.xcassets */,
 				CA9FEC812A54E7AD00CA260D /* LaunchScreen.storyboard */,
@@ -70,13 +178,45 @@
 			path = SolarSystem;
 			sourceTree = "<group>";
 		};
+		DCDED7062688E007961C09A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F620E223708A4E7C6529D724 /* Pods-SolarSystem.debug.xcconfig */,
+				FC92C63B26D5893F9188362D /* Pods-SolarSystem.release.xcconfig */,
+				47DE815638264239AF8471B1 /* Pods-SolarSystemTests.debug.xcconfig */,
+				661325C6764DA21D3E2F3DF5 /* Pods-SolarSystemTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA2FCD3C2AF472DB00376494 /* SolarSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2FCD432AF472DB00376494 /* Build configuration list for PBXNativeTarget "SolarSystemTests" */;
+			buildPhases = (
+				D6E876AA906933B4E797A55C /* [CP] Check Pods Manifest.lock */,
+				CA2FCD392AF472DB00376494 /* Sources */,
+				CA2FCD3A2AF472DB00376494 /* Frameworks */,
+				CA2FCD3B2AF472DB00376494 /* Resources */,
+				A0140FF49B0544B98A5E0CE5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2FCD422AF472DB00376494 /* PBXTargetDependency */,
+			);
+			name = SolarSystemTests;
+			productName = SolarSystemTests;
+			productReference = CA2FCD3D2AF472DB00376494 /* SolarSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CA9FEC722A54E7AB00CA260D /* SolarSystem */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA9FEC872A54E7AD00CA260D /* Build configuration list for PBXNativeTarget "SolarSystem" */;
 			buildPhases = (
+				F29DB71806293462DD4677DE /* [CP] Check Pods Manifest.lock */,
 				CA9FEC6F2A54E7AB00CA260D /* Sources */,
 				CA9FEC702A54E7AB00CA260D /* Frameworks */,
 				CA9FEC712A54E7AB00CA260D /* Resources */,
@@ -100,6 +240,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					CA2FCD3C2AF472DB00376494 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = CA9FEC722A54E7AB00CA260D;
+					};
 					CA9FEC722A54E7AB00CA260D = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -119,11 +263,19 @@
 			projectRoot = "";
 			targets = (
 				CA9FEC722A54E7AB00CA260D /* SolarSystem */,
+				CA2FCD3C2AF472DB00376494 /* SolarSystemTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA2FCD3B2AF472DB00376494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA9FEC712A54E7AB00CA260D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,19 +288,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0140FF49B0544B98A5E0CE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SolarSystemTests/Pods-SolarSystemTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SolarSystemTests/Pods-SolarSystemTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SolarSystemTests/Pods-SolarSystemTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E876AA906933B4E797A55C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolarSystemTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F29DB71806293462DD4677DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolarSystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		CA2FCD392AF472DB00376494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2FCD492AF485D700376494 /* PlanetDetailViewModelTests.swift in Sources */,
+				CA2FCD472AF4763200376494 /* PlanetViewModelTests.swift in Sources */,
+				CA2FCD402AF472DB00376494 /* SolarSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA9FEC6F2A54E7AB00CA260D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2FCD292AF31AAE00376494 /* PlanetViewModel.swift in Sources */,
 				CA9FEC7B2A54E7AB00CA260D /* ViewController.swift in Sources */,
 				CA9FEC772A54E7AB00CA260D /* AppDelegate.swift in Sources */,
+				CA2FCD1F2AF3128900376494 /* PlanetData.swift in Sources */,
+				CA2FCD272AF319CC00376494 /* PlanetDataService.swift in Sources */,
 				CA9FEC8B2A56211700CA260D /* PlanetDetailViewController.swift in Sources */,
+				CA2FCD212AF3151200376494 /* CustomCell.swift in Sources */,
 				CA9FEC792A54E7AB00CA260D /* SceneDelegate.swift in Sources */,
+				CA2FCD2B2AF3261800376494 /* PlanetDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA2FCD422AF472DB00376494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA9FEC722A54E7AB00CA260D /* SolarSystem */;
+			targetProxy = CA2FCD412AF472DB00376494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA9FEC7C2A54E7AB00CA260D /* Main.storyboard */ = {
@@ -170,6 +409,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CA2FCD442AF472DB00376494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47DE815638264239AF8471B1 /* Pods-SolarSystemTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q94UG63NK9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "https---anupkuriakose.netlify.app-.SolarSystemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SolarSystem";
+			};
+			name = Debug;
+		};
+		CA2FCD452AF472DB00376494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661325C6764DA21D3E2F3DF5 /* Pods-SolarSystemTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q94UG63NK9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "https---anupkuriakose.netlify.app-.SolarSystemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SolarSystem";
+			};
+			name = Release;
+		};
 		CA9FEC852A54E7AD00CA260D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -286,6 +563,7 @@
 		};
 		CA9FEC882A54E7AD00CA260D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F620E223708A4E7C6529D724 /* Pods-SolarSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +597,7 @@
 		};
 		CA9FEC892A54E7AD00CA260D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC92C63B26D5893F9188362D /* Pods-SolarSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +632,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA2FCD432AF472DB00376494 /* Build configuration list for PBXNativeTarget "SolarSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2FCD442AF472DB00376494 /* Debug */,
+				CA2FCD452AF472DB00376494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA9FEC6E2A54E7AB00CA260D /* Build configuration list for PBXProject "SolarSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

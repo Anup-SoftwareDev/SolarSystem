@@ -10,26 +10,17 @@ import UIKit
 class PlanetDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var planetPicture: UIImageView!
-    var planet: Planet?
+    //var planet: Planet?
     @IBOutlet weak var planetTable: UITableView!
     
-    // Add your data here
-    let data = [
-        ["Mass", "0.93", "10^24 kg"],
-        ["Diameter", "4879", "km"],
-        ["Gravity", "3.7", "m/s^2"],
-        ["Distance from Sun", "57.9", "10^6 km"],
-        ["Mean Temp", "167", "C"],
-        ["Day Length","0", "hours"],
-        ["Orbital Period","0", "days"],
-        ["Moons","0", "moon/s"]
-    ]
-
+    var viewModel: PlanetDetailViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "\(planet!.name) Info"
-        planetPicture.image = UIImage(named: planet!.name)
+        self.navigationItem.title = viewModel.title
+        //planetPicture.image = UIImage(named: planet!.name)
+        planetPicture.image = UIImage(named: viewModel.imageName)
         planetPicture.contentMode = .scaleAspectFill
         planetPicture.layer.borderWidth = 6.0
         planetPicture.layer.borderColor = UIColor.white.cgColor
@@ -42,27 +33,30 @@ class PlanetDetailViewController: UIViewController, UITableViewDataSource, UITab
     
     // MARK: - UITableViewDataSource methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        //return data.count
+        return viewModel.planetData.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // Add your data here
-        let newdata = [
-            ["Mass", String(planet!.mass), "10^24 kg"],
-            ["Diameter", String(planet!.diameter), "km"],
-            ["Gravity", String(planet!.gravity), "m/s^2"],
-            ["Distance from Sun", String(planet!.distanceSun), "10^6 km"],
-            ["Mean Temp", String(planet!.temperature), "C"],
-            ["Day Length",String(planet!.dayLength), "hours"],
-            ["Orbital Period",String(planet!.orbitalPeriod), "days"],
-            ["Moons",String(planet!.moons), "moon/s"]
-        ]
+//        let newdata = [
+//            ["Mass", String(planet!.mass), "10^24 kg"],
+//            ["Diameter", String(planet!.diameter), "km"],
+//            ["Gravity", String(planet!.gravity), "m/s^2"],
+//            ["Distance from Sun", String(planet!.distanceSun), "10^6 km"],
+//            ["Mean Temp", String(planet!.temperature), "C"],
+//            ["Day Length",String(planet!.dayLength), "hours"],
+//            ["Orbital Period",String(planet!.orbitalPeriod), "days"],
+//            ["Moons",String(planet!.moons), "moon/s"]
+//        ]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlanetDetailCell", for: indexPath)
         
         // Retrieve the data for this cell
-        let cellData = newdata[indexPath.row]
+        //let cellData = newdata[indexPath.row]
+        let cellData = viewModel.planetData[indexPath.row]
         
         // Assuming you have three labels in the cell with tags 1, 2, and 3 respectively
         if let label1 = cell.viewWithTag(1) as? UILabel,
@@ -112,34 +106,4 @@ class PlanetDetailViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
 }
-//
-//class PlanetDetailViewController: UIViewController {
-//
-//
-//
-//    @IBOutlet weak var planetPicture: UIImageView!
-//
-//    var planet: Planet? // Add this line to store the passed planet
-//
-//    @IBOutlet weak var planetTable: UITableView!
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        self.navigationItem.title = "\(planet!.name) Info"
-//        // Set the image of planetPicture to Earth.jpg from assets
-//        planetPicture.image = UIImage(named: planet!.name)
-//        planetPicture.contentMode = .scaleAspectFill
-//
-//        // Add a thick white border to planetPicture
-//        planetPicture.layer.borderWidth = 6.0 // The border width, adjust as necessary
-//        planetPicture.layer.borderColor = UIColor.white.cgColor // The border color
-//        planetPicture.layer.cornerRadius = planetPicture.frame.size.width * 0.05
-//
-//        // Set clipsToBounds to true to apply the corner radius to the image
-//        planetPicture.clipsToBounds = true
-//
-//
-//    }
-//
-//}
+
