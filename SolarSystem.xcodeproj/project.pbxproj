@@ -16,6 +16,7 @@
 		CA2FCD402AF472DB00376494 /* SolarSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD3F2AF472DB00376494 /* SolarSystemTests.swift */; };
 		CA2FCD472AF4763200376494 /* PlanetViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD462AF4763200376494 /* PlanetViewModelTests.swift */; };
 		CA2FCD492AF485D700376494 /* PlanetDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD482AF485D700376494 /* PlanetDetailViewModelTests.swift */; };
+		CA2FCD4B2AF48C3500376494 /* PlanetDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2FCD4A2AF48C3500376494 /* PlanetDataTests.swift */; };
 		CA9FEC772A54E7AB00CA260D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FEC762A54E7AB00CA260D /* AppDelegate.swift */; };
 		CA9FEC792A54E7AB00CA260D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FEC782A54E7AB00CA260D /* SceneDelegate.swift */; };
 		CA9FEC7B2A54E7AB00CA260D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FEC7A2A54E7AB00CA260D /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 		CA2FCD3F2AF472DB00376494 /* SolarSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTests.swift; sourceTree = "<group>"; };
 		CA2FCD462AF4763200376494 /* PlanetViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModelTests.swift; sourceTree = "<group>"; };
 		CA2FCD482AF485D700376494 /* PlanetDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewModelTests.swift; sourceTree = "<group>"; };
+		CA2FCD4A2AF48C3500376494 /* PlanetDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDataTests.swift; sourceTree = "<group>"; };
 		CA9FEC732A54E7AB00CA260D /* SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9FEC762A54E7AB00CA260D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA9FEC782A54E7AB00CA260D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				CA2FCD3F2AF472DB00376494 /* SolarSystemTests.swift */,
 				CA2FCD462AF4763200376494 /* PlanetViewModelTests.swift */,
 				CA2FCD482AF485D700376494 /* PlanetDetailViewModelTests.swift */,
+				CA2FCD4A2AF48C3500376494 /* PlanetDataTests.swift */,
 			);
 			path = SolarSystemTests;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2FCD492AF485D700376494 /* PlanetDetailViewModelTests.swift in Sources */,
+				CA2FCD4B2AF48C3500376494 /* PlanetDataTests.swift in Sources */,
 				CA2FCD472AF4763200376494 /* PlanetViewModelTests.swift in Sources */,
 				CA2FCD402AF472DB00376494 /* SolarSystemTests.swift in Sources */,
 			);
